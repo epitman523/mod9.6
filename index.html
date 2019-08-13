@@ -15,15 +15,19 @@
         <p></p>
         <form id="repo-search">
             <label for="github-handle">Please type the GitHub user handle below to see list of repos</label>
-            <input type="text" name="github-handle" required />
-            <input type="submit" value="Search" />
+            <input type="text" name="github-handle" id="github-handle" required />
+            <input type="submit" for="repo-search" value="Search" />
         </form>
+        <section class="js-error-message"></section>
         <section class="results">
             <ul class="js-repo-list">
 
             </ul>
         </section>
     </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
